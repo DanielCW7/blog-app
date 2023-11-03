@@ -7,23 +7,6 @@ function App() {
   return (
     <div className="App">
         <Hero />
-        <header className="App-header">
-        <div className='border-2 max-w-7xl w-full'>
-
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          </div>
-        </header>
         <body className='max-w-7xl m-auto'>
           <Post />
           <Post />
