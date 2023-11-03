@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import Hero from "./components/hero"
-import Post from './components/post';
+import Posts from './components/posts';
 
 function App() {
   return (
     <div className="App">
         <Hero />
-        <body className='max-w-7xl m-auto'>
+        <body className='max-w-7xl m-auto p-10'>
           <form className='text-right'>
             {/* for filtering/searching blog posts */}
             <select type='select' className='border'>
@@ -15,11 +14,8 @@ function App() {
               <option> oldest to newest </option>
               <option> newest to oldest </option>
             </select>
-            
           </form>
-          <Post />
-          <Post />
-          <Post />          
+          <Posts />          
         </body>        
 
 
