@@ -8,8 +8,11 @@ const Post = () => {
                 <img src={sitting} className="w-full"/>
             </div>
             <div className="flex flex-col text-left justify-center pt-5 pb-5 lg:p-10">
-                <h2 className="font-bold text-xl"> Post title </h2>
+                <h2 className="font-bold text-xl"> this is a post title </h2>
+                <p> 01-01-2023 </p>
+                <br/>
                 <p> lorem ipsum description lorem ipsum description lorem ipsum description lorem ipsum description lorem ipsum description lorem ipsum description </p>
+                <p> More ... </p>
             </div>
         </div>
     )
