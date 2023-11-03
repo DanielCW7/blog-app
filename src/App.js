@@ -23,8 +23,13 @@ function App() {
             Learn React
           </a>
           </div>
-        </header>        
-      <Post />
+        </header>
+        <body className='max-w-7xl m-auto'>
+          <Post />
+          <Post />
+          <Post />          
+        </body>        
+
 
     </div>
   );
