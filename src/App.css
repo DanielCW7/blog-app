@@ -43,5 +43,6 @@
 
 
 .bg-sitting {
-  background-image: url("./images/sitting.jpg");
+  /* background-image: url("./images/sitting.jpg"); */
+  background-color: #282c34;
 }

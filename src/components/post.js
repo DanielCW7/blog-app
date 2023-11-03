@@ -2,14 +2,13 @@ import sitting from "../images/sitting.jpg"
 
 const Post = () => {
     return (
-        <div className="flex flex-col md:flex-row border m-10">
+        <div className="flex flex-col lg:flex-row m-10 md:m-12">
             {/* image */}
-            <div className="">
-                
-                <img src={sitting} className="max-w-md md:max-w-lg "/>
+            <div className="overflow-hidden max-h-40 md:max-h-64 lg:max-h-none lg:max-w-md">
+                <img src={sitting} className="w-full"/>
             </div>
-            <div className="flex flex-col text-left justify-center p-5">
-                <h2 className="font-bold text-xl"> Post </h2>
+            <div className="flex flex-col text-left justify-center pt-5 pb-5 lg:p-10">
+                <h2 className="font-bold text-xl"> Post title </h2>
                 <p> lorem ipsum description lorem ipsum description lorem ipsum description lorem ipsum description lorem ipsum description lorem ipsum description </p>
             </div>
         </div>
