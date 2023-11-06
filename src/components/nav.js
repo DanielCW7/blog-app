@@ -7,8 +7,9 @@ const Nav = () => {
 const [toggleOpen, setOpen] = useState(false);
 
     return (
-        // DT nav
         <div className="max-w-7xl m-auto pl-10 pr-10 pb-2 pt-2">
+            
+        {/* DT nav */}
             <div className="text-right hidden lg:block">
                 <span className="p-2"> Home </span>
                 <span className="p-2"> About </span>
@@ -16,7 +17,6 @@ const [toggleOpen, setOpen] = useState(false);
             </div>
 
         {/* mobile nav */}
-        
             <div className="lg:hidden">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
