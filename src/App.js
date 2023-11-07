@@ -1,7 +1,8 @@
 import './App.css';
-import Hero from "./components/hero"
+import Hero from "./components/hero";
 import Posts from './components/posts';
 import Nav from './components/nav';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Posts />          
         </body>        
 
-
+      <Footer />
     </div>
   );
 }
