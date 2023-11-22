@@ -11,7 +11,7 @@ const Post = () => {
             <div className="p-6 text-black">
                 <span className="text-xl font-bold"> BREAKING: Headlines are BORING! </span>
                 <p> brief blurb about the blog post, to be expanded upon in the post itself. </p>
-                <sub> 01-01-2000 </sub>
+                <small> 01-01-2000 </small>
             </div>
 
         </div>
