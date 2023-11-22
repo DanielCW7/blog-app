@@ -5,11 +5,13 @@ import Image from "next/image"
 
 const Post = () => {
     return (
-        <div className="rounded-xl overflow-hidden shadow-2xl">
+        // link around the entire card
+        <div className="rounded-xl overflow-hidden shadow-lg">
             <Image src={bg} className="max-h-64" style={{ objectFit: "cover"}}/>
-            <div className="p-4 text-black">
-                <span className="text-2xl font-bold"> title with a lot of words </span>
-                <p> brief blurb about the blog post, to be expanded upon in the post itself. </p>               
+            <div className="p-6 text-black">
+                <span className="text-xl font-bold"> BREAKING: Headlines are BORING! </span>
+                <p> brief blurb about the blog post, to be expanded upon in the post itself. </p>
+                <sub> 01-01-2000 </sub>
             </div>
 
         </div>
