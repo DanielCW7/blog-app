@@ -9,7 +9,27 @@ const project = {
             title: 'Topic'
         },
         {
-            name: 'slug'
+            name: 'author',
+            type: 'string',
+            title: 'Author'
+        },
+        {
+            name: 'date',
+            type: 'date',
+            title: 'Date'
+        },
+        {
+            name: 'description',
+            type: 'text',
+            title: 'Description'
+        },
+        {
+            name: 'thumbnail',
+            type: 'image',
+            title: 'Thumbnail',
+            option: {hotspot: true}
         }
     ]
 }
+
+export default project
