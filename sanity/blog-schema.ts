@@ -1,6 +1,6 @@
-const project = {
-    name: 'project',
-    title: 'Projects',
+const blog = {
+    name: 'blog',
+    title: 'Blog',
     type: 'document',
     fields: [
         {
@@ -19,6 +19,11 @@ const project = {
             title: 'Date'
         },
         {
+            name: 'brief',
+            type: 'text',
+            title: 'Brief'
+        },
+        {
             name: 'description',
             type: 'text',
             title: 'Description'
@@ -27,9 +32,9 @@ const project = {
             name: 'thumbnail',
             type: 'image',
             title: 'Thumbnail',
-            option: {hotspot: true}
+            options: {hotspot: true}
         }
     ]
 }
 
-export default project
+export default blog
