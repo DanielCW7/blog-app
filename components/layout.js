@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-    <Nav />
+      <Nav />
       <Hero />
       <main className='bg-white'> 
           {children}
