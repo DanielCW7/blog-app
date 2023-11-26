@@ -1,8 +1,8 @@
 // wrapper file for entire app
 import "../styles/globals.css";
 import React from "react";
-import AdminLayout from "@/components/adminLayout";
-import DefaultLayout from "@/components/layout";
+import AdminLayout from "@/utils/adminLayout";
+import DefaultLayout from "@/utils/layout";
 
 export const metadata = {
     title: 'Create Next App',

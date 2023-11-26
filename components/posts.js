@@ -1,6 +1,6 @@
 
 // all posts
-import Post from "../components/post";
+import Post from "./post";
 
 const Posts = () => {
     return (

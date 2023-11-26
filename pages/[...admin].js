@@ -1,5 +1,5 @@
 
-import AdminLayout from "@/components/adminLayout";
+import AdminLayout from "@/utils/adminLayout";
 import {NextStudio} from "next-sanity/studio";
 import config from "@/sanity.config"
 

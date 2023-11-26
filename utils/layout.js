@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google';
-import Footer from './footer';
-import Hero from './hero';
-import Nav from './nav';
+import Footer from '../components/footer';
+import Hero from '../components/hero';
+import Nav from '../components/nav';
 import { useEffect } from 'react';
 
 
