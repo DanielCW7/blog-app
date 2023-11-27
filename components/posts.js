@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Post from "./post";
 import { getPosts } from "@/sanity/sanity-utils";
+import Skeleton from "@/utils/skeleton";
 
 const Posts = () => {
 
@@ -23,14 +24,15 @@ const Posts = () => {
     }
 
     useEffect(() => {
-        populate()
+        // populate()
     }, [])
     
 
 
     return (
         <div className="p-10 grid gap-10 auto-rows-max grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            { posts ? posts : <div>nah</div> }         
+            { posts ? posts : <div className="text-black"> no posts to display </div> } 
+            <Skeleton />        
         </div>
     )
 }

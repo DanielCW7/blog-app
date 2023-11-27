@@ -19,6 +19,8 @@ const Post = (data) => {
                 <small className="flex flex-row justify-between">
                     <span>By: {author}</span>
                     <span> {date} </span>
+                    
+                    {/* link via arrow to the actual post itself */}
                 </small>
             </div>
 

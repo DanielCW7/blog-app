@@ -33,3 +33,22 @@ body {
 .bg-filter {
   background: rgba(46, 46, 46, 0.705)000;
 }
+
+.skeleton-image,
+.skeleton-text,
+.skeleton-snippet {
+  background: #c0c0c0;
+}
+
+.skeleton-text,
+.skeleton-snippet {
+  border-radius: 10px;
+  height: 1rem;
+}
+
+.skeleton-snippet {
+  height: .7rem;
+  width: 15%;
+}
+
+/* gradient wipe over the entire skeleton container */
