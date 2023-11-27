@@ -3,7 +3,9 @@
 import bg from "../images/hero.webp"
 import Image from "next/image"
 
-const Post = () => {
+const Post = (props) => {
+    console.log(props.props.Thumbnail)
+
     return (
         // link around the entire card
         <div className="rounded-xl overflow-hidden shadow-lg">
