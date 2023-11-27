@@ -13,7 +13,7 @@ const Posts = () => {
         try {
             const items = await getPosts();
             console.log(items) 
-            const list = items.map(post => <Post props={post} />)
+            const list = items.map(post => <Post data={post} />)
             setposts(list)
         } catch (err) {
             console.error(err)
@@ -35,12 +35,5 @@ const Posts = () => {
     )
 }
 
-// export function getStaticPaths() {
-
-// }
-
-// export function getStaticProps() {
-
-// }
 
 export default Posts

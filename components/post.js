@@ -3,17 +3,23 @@
 import bg from "../images/hero.webp"
 import Image from "next/image"
 
-const Post = (props) => {
-    console.log(props.props.Thumbnail)
+const Post = (data) => {
+
+    const { author, brief, thumbnail, date, topic } = data.data
+    console.log(thumbnail)
 
     return (
         // link around the entire card
         <div className="rounded-xl overflow-hidden shadow-lg">
-            <Image src={bg} className="max-h-64" style={{ objectFit: "cover"}}/>
+            <Image src={thumbnail} width={1000} height={1000} className="h-48 max-h-48" style={{ objectFit: "cover"}}/>
             <div className="p-6 text-black">
-                <span className="text-xl font-bold"> BREAKING: Headlines are BORING! </span>
-                <p> brief blurb about the blog post, to be expanded upon in the post itself. </p>
-                <small> 01-01-2000 </small>
+                <span className="text-xl font-bold"> {topic} </span>
+                <p> {brief} </p>
+                
+                <small className="flex flex-row justify-between">
+                    <span>By: {author}</span>
+                    <span> {date} </span>
+                </small>
             </div>
 
         </div>

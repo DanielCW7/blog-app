@@ -20,7 +20,7 @@ export async function getPosts() {
             date,
             brief,
             description,
-            "Thumbnail": thumbnail.asset->url
+            "thumbnail": thumbnail.asset->url
         }`
     )
 }
