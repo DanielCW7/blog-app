@@ -34,10 +34,23 @@ body {
   background: rgba(46, 46, 46, 0.705)000;
 }
 
+@keyframes skeleton-load {
+  0% {background-position: 100% 0%;}
+  100% {background-position: 0% 100%;}
+
+}
+
+.skeleton-container {
+  background: linear-gradient(to left, rgba(145, 145, 145, .5), rgb(255, 255, 255), rgb(145, 145, 145, .5));
+  background-size: 1000%;
+  animation: skeleton-load infinite 1s linear;
+}
+
 .skeleton-image,
 .skeleton-text,
 .skeleton-snippet {
   background: #c0c0c0;
+  opacity: .6;
 }
 
 .skeleton-text,

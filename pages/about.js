@@ -6,7 +6,6 @@ const About = () => {
             <p> 
                 This app was created as a fun project that exercies the use of a CMS to easily produce
                 and update posts and serve them from an API. It's built using ReactJS, NextJS, and TailwindCSS.
-                
             </p>
         </div>            
     )

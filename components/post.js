@@ -1,16 +1,17 @@
 
 // individual post format
+import Link from "next/link"
 import bg from "../images/hero.webp"
 import Image from "next/image"
 
 const Post = (data) => {
 
-    const { author, brief, thumbnail, date, topic } = data.data
-    console.log(thumbnail)
+    const { author, brief, thumbnail, date, topic, slug } = data.data
+    console.log(data)
 
     return (
         // link around the entire card
-        <div className="rounded-xl overflow-hidden shadow-lg">
+        <Link href={`/blog/${slug}`} className="rounded-xl overflow-hidden shadow-lg">
             <Image src={thumbnail} width={1000} height={1000} className="h-48 max-h-48" style={{ objectFit: "cover"}}/>
             <div className="p-6 text-black">
                 <span className="text-xl font-bold"> {topic} </span>
@@ -24,7 +25,7 @@ const Post = (data) => {
                 </small>
             </div>
 
-        </div>
+        </Link>
     )
 }
 
