@@ -24,15 +24,28 @@ const blog = {
             title: 'Brief'
         },
         {
-            name: 'description',
+            name: 'content',
             type: 'array',
-            title: 'Description',
+            title: 'Content',
             of: [{ type: "block"}]
         },
         {
             name: 'thumbnail',
             type: 'image',
             title: 'Thumbnail',
+            fields: [
+                {
+                    name: 'alt',
+                    type: 'string',
+                    title: 'Alt',                     
+                }  
+            ]
+        },
+        {
+            name: 'slug',
+            type: 'slug',
+            title: 'Slug',
+            options: { source: 'name' }
         }
     ]
 }

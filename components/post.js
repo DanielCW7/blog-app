@@ -1,13 +1,12 @@
 
 // individual post format
 import Link from "next/link"
-import bg from "../images/hero.webp"
 import Image from "next/image"
 
 const Post = (data) => {
 
-    const { author, brief, thumbnail, date, topic, slug } = data.data
-    console.log(data)
+    const { author, brief, thumbnail, date, topic, slug, alt } = data.data
+    console.log(data.data.slug)
 
     return (
         // link around the entire card

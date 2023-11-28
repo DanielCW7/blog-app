@@ -2,9 +2,7 @@
 // all posts
 import { Suspense, useEffect, useState } from "react";
 import Post from "./post";
-import { getPosts } from "@/sanity/sanity-utils";
-import Skeleton from "@/components/utils/skeleton";
-import Loader from "@/components/utils/loader";
+import { getPosts } from "../sanity/sanity-utils";
 
 const Posts = () => {
 

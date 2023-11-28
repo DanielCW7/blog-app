@@ -1,5 +1,4 @@
 // data grabbing functions
-
 import { createClient, groq } from "next-sanity";
 
 export async function getPosts() {
@@ -9,8 +8,7 @@ export async function getPosts() {
         apiVersion: "2023-11-24",
     });
 
-
-    // where to use the GROQ query (sanity.io docs)
+    //  GROQ comes from sanity
     return client.fetch(
         groq`*[_type == "blog"]{
             _id,
@@ -19,7 +17,8 @@ export async function getPosts() {
             author,
             date,
             brief,
-            description,
+            content,
+            alt,
             "thumbnail": thumbnail.asset->url,
             "slug": slug.current
         }`
@@ -34,7 +33,6 @@ export async function getPost(slug: string) {
     });
 
 
-    // where to use the GROQ query (sanity.io docs)
     return client.fetch(
         groq`*[_type == "blog" && slug.current == $slug][0]{
             _id,
@@ -42,12 +40,11 @@ export async function getPost(slug: string) {
             topic,
             author,
             date,
-            brief,
-            description,
+            content,
             "thumbnail": thumbnail.asset->url,
             "slug": slug.current
         }`,
-        { slug: slug}
+        { slug }
         
     )    
 }
