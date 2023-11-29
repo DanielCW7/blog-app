@@ -32,20 +32,21 @@ const PostPage = (param) => {
     }, [router.query.id])
 
     return (
-        <div className="text-black">
+        <div className="text-black p-10 m-auto">
                 { 
                     isLoading ? <Loader /> : 
                     
-                    <section className="p-12">
-                        <Image src={data?.thumbnail ?? ""} width={1000} height={1000} className="max-h-48 rounded-xl" style={{ objectFit: "cover"}}/>
-                        <div className="p-6 text-black">
-                            <h2 className="text-3xl font-bold"> {data.topic} </h2>
-                            <p> {data.content} </p>
+                    <section className="max-w-3xl m-auto">
+                        <div className="pt-6 text-black">
+                            <Image src={data?.thumbnail ?? ""} width={1000} height={1000} className="max-w-full lg:max-w-3xl rounded-xl mb-6 mx-auto" style={{ objectFit: "cover"}}/>
+                            <h2 className="text-3xl font-thin"> {data.topic} </h2>
                             
-                            <small className="flex flex-row justify-between">
-                                <span>By: {data.author}</span>
-                                <span> {data.date} </span>
-                            </small>
+                            <div className="my-6">
+                                <div>By: {data.author}</div>
+                                <small> {data.date} </small>
+                            </div>                            
+                            <p> {data.content} </p>
+                            {/* need a serizlizer to view rich text */}
                         </div>
                     </section>
                 }

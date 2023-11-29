@@ -1,6 +1,7 @@
 
 // all posts
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import Skeleton from "../components/utils/skeleton";
 import Post from "./post";
 import { getPosts } from "../sanity/sanity-utils";
 
@@ -8,8 +9,12 @@ const Posts = () => {
 
 
     const [isPosts, setposts] = useState("")
+    const [isLoading, setLoading] = useState(true)
+
 
     const populate = async () => {
+        setLoading(true)
+        
         try {
             const items = await getPosts();
             const list = items.map(post => <Post data={post} />)
@@ -18,7 +23,7 @@ const Posts = () => {
             console.error(err)
             // return error UI
         } finally {
-            console.log("loaded")
+            setLoading(false)
         }
     }
 
