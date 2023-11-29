@@ -12,7 +12,7 @@ function App({ Component, pageProps, router }) {
     const isAdminPage = router.pathname === "/[...admin]";
 
     const Layout = isAdminPage ? AdminLayout : DefaultLayout
-    console.log(router.pathname)
+
     return (
         <Layout>
             <Component {...pageProps} />     

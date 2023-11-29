@@ -25,9 +25,8 @@ const blog = {
         },
         {
             name: 'content',
-            type: 'array',
-            title: 'Content',
-            of: [{ type: "block"}]
+            type: 'text',
+            title: 'Content'
         },
         {
             name: 'thumbnail',
