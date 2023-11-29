@@ -36,10 +36,10 @@ const PostPage = (param) => {
                 { 
                     isLoading ? <Loader /> : 
                     
-                    <div>
-                        <Image src={data?.thumbnail ?? ""} width={1000} height={1000} className="h-48 max-h-48" style={{ objectFit: "cover"}}/>
+                    <section className="p-12">
+                        <Image src={data?.thumbnail ?? ""} width={1000} height={1000} className="max-h-48 rounded-xl" style={{ objectFit: "cover"}}/>
                         <div className="p-6 text-black">
-                            <span className="text-xl font-bold"> {data.topic} </span>
+                            <h2 className="text-3xl font-bold"> {data.topic} </h2>
                             <p> {data.content} </p>
                             
                             <small className="flex flex-row justify-between">
@@ -47,7 +47,7 @@ const PostPage = (param) => {
                                 <span> {data.date} </span>
                             </small>
                         </div>
-                    </div>
+                    </section>
                 }
         </div>
     )
