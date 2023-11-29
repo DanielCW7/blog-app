@@ -1,7 +1,7 @@
 
-import AdminLayout from "@/components/adminLayout";
+import AdminLayout from "../components/adminLayout";
 import {NextStudio} from "next-sanity/studio";
-import config from "@/sanity/sanity.config"
+import config from "../sanity/sanity.config"
 
 const Admin = () => {
     return (
