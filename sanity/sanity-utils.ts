@@ -1,6 +1,7 @@
 // data grabbing functions
 import { createClient, groq } from "next-sanity";
 
+
 export async function getPosts() {
     const client = createClient({
         projectId: "roviyn05",
@@ -46,5 +47,5 @@ export async function getPost(slug: string) {
         }`,
         { slug }
         
-    )    
+    )  
 }
