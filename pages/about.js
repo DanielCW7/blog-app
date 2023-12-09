@@ -4,17 +4,16 @@ const About = () => {
         <div className="max-w-7xl m-auto text-black p-10"> 
             <h2 className="text-3xl mb-2"> About </h2>
             <p> 
-                This app was created as a fun project that exercies the use of a CMS to easily produce
+                This app was created as a fun project that exercies the use of the Sanity.io CMS to easily produce
                 and update posts and serve them from an API. It's built using ReactJS, NextJS, and TailwindCSS.
             </p>
             <br/>
             <p>
-                In addition to being able to manage my blog content easily using the Sanity.io CMS, it allows me to
-                express myself in ways I might not normally do so using my love for movie-watching, comicbook collecting, 
+                In addition to learning how to use Content Management Systems, I'm able to
+                express my love for movie-watching, comicbook collecting, 
                 and general breakdowns for topics I'm passionate about. This project is a fantastic way to practice and illustrate 
                 the most effective means to leverage my knowledge of ReactJS, NextJS, and a headless CMS to better understand how 
                 easy it can be to create a site with readily accessible content.
-            
             </p>
             <br/>
             <p>

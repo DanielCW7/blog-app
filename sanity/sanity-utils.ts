@@ -49,4 +49,4 @@ export async function getPost(slug: string) {
         { slug }
         
     )  
-}
+}            

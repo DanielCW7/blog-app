@@ -8,7 +8,6 @@ const Hero = (props) => {
             <div className="max-w-7xl m-auto h-80 flex flex-col justify-center text-center">
                 <h1 className="font-black text-5xl text-center mb-2 customH1"> Daniel's Blog </h1>
                 {/* clip path text gradient for an interesting hero text - look for kapehe's sanity project for reference */}
-                <p> Stay up to date with me! </p>
             </div>
         </header>
     )

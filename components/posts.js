@@ -1,9 +1,10 @@
 
 // all posts
 import { useEffect, useState } from "react";
-import Skeleton from "../components/utils/skeleton";
+import delay from "./utils/helpers"
 import Post from "./post";
 import { getPosts } from "../sanity/sanity-utils";
+import Skeleton from "./utils/skeleton";
 
 const Posts = () => {
 
@@ -14,7 +15,8 @@ const Posts = () => {
 
     const populate = async () => {
         setLoading(true)
-        
+        await delay(2000)
+
         try {
             const items = await getPosts();
             const list = items.map(post => <Post data={post} />)
@@ -35,7 +37,15 @@ const Posts = () => {
 
     return (
         <div className="p-10 grid gap-10 auto-rows-max grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            { isPosts ? isPosts : <div className="text-black"> no posts to display </div> }    
+            { isLoading ? 
+            <>
+                <Skeleton />
+                <Skeleton />
+                <Skeleton />
+                <Skeleton />
+                <Skeleton />
+                <Skeleton />
+            </> : isPosts }    
         </div>
     )
 }
