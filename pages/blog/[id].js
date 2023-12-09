@@ -53,7 +53,7 @@ const PostPage = (param) => {
                                 { 
                                     data.avatar && 
                                     <div className="h-28 w-28 overflow-hidden rounded-full">
-                                        <Image src={data.avatar} width={200} height={200} className="authorPic"/>
+                                        <Image alt="the author of this post" src={data.avatar} width={200} height={200} className="authorPic"/>
                                     </div>
                                 }
                                 <div className="flex flex-col justify-center m-2">
