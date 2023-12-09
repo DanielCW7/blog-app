@@ -42,6 +42,7 @@ export async function getPost(slug: string) {
             author,
             date,
             content,
+            "avatar": avatar.asset->url,
             "thumbnail": thumbnail.asset->url,
             "slug": slug.current
         }`,

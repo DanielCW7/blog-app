@@ -65,3 +65,18 @@ body {
 }
 
 /* gradient wipe over the entire skeleton container */
+
+.customH1 {
+  background: linear-gradient(to top, rgb(166, 255, 0), rgb(0, 153, 255));
+  padding: 10px;
+  background-clip: text;
+  color: transparent;
+}
+
+.socials {
+  margin: auto;
+}
+
+.profilePic {
+  border-radius: 50%;
+}

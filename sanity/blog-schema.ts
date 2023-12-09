@@ -8,11 +8,7 @@ const blog = {
             type: 'string',
             title: 'Topic'
         },
-        {
-            name: 'author',
-            type: 'string',
-            title: 'Author'
-        },
+
         {
             name: 'date',
             type: 'date',
@@ -47,7 +43,18 @@ const blog = {
             type: 'slug',
             title: 'Slug',
             options: { source: 'name' }
-        }
+        },
+        {
+            name: 'avatar',
+            type: 'image',
+            title: 'Avatar',
+            options: { hotspot: true }
+        },
+        {
+            name: 'author',
+            type: 'string',
+            title: 'Author'
+        },
     ]
 }
 

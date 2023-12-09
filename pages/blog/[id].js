@@ -11,7 +11,7 @@ const PostPage = (param) => {
     const [data, setData] = useState(null);
     const router = useRouter();
     
-    // console.log(param, router.query.id, data)
+    console.log(param, router.query.id, data)
 
     const components = {
         block: {
@@ -29,7 +29,7 @@ const PostPage = (param) => {
             setLoading(true)
             try {
                 const postData = await getPost(router.query.id)
-                console.log(postData.content)
+                console.log(postData)
 
                 setData(postData)
             } catch (err) {
@@ -52,9 +52,16 @@ const PostPage = (param) => {
                             <Image src={data?.thumbnail ?? ""} width={1000} height={1000} className="max-w-full lg:max-w-3xl rounded-xl mb-6 mx-auto" style={{ objectFit: "cover"}}/>
                             <h2 className="text-3xl font-bold"> {data.topic} </h2>
                             
-                            <div className="my-6">
-                                <p>By: {data.author}</p>
-                                <small> {data.date} </small>
+                            <div className="my-6 flex flex-row">
+                                {/* need a stock profile image just in case */}
+                                <div>
+                                    <Image src={data?.avatar ?? ""} width={100} height={100} className="profilePic"/>
+                                </div>
+                                <div className="flex flex-col justify-center m-2">
+                                    <p className="text-lg">By: {data.author}</p>
+                                    <small> {data.date} </small>                                    
+                                </div>
+
                             </div>                            
                             <PortableText value={data.content} components={components}/>
 
