@@ -18,7 +18,10 @@ const PostPage = (param) => {
             h3: ({children}) => <h3 className="font-semibold text-xl mt-10 mb-2">{children}</h3>,
             strong: ({children}) => <strong className="text-bold">{children}</strong>,
             p: ({children}) => <p className="text-red-900">{children}</p>
-        }
+        },
+        // types: {
+        //     code: 
+        // }
     }
 
     useEffect(() =>  { 
