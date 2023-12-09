@@ -29,14 +29,12 @@ const blog = {
         {
             name: 'thumbnail',
             type: 'image',
-            title: 'Thumbnail',
-            fields: [
-                {
-                    name: 'alt',
-                    type: 'string',
-                    title: 'Alt',                     
-                }  
-            ]
+            title: 'Thumbnail'   
+        },
+        {
+            name: 'alt',
+            type: 'string',
+            title: 'Alt',            
         },
         {
             name: 'slug',

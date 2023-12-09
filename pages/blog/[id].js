@@ -11,8 +11,6 @@ const PostPage = (param) => {
     const [data, setData] = useState(null);
     const router = useRouter();
     
-    console.log(param, data?.avatar)
-
     const components = {
         block: {
             h3: ({children}) => <h3 className="font-semibold text-xl mt-10 mb-2">{children}</h3>,
@@ -46,7 +44,7 @@ const PostPage = (param) => {
                     
                     <section className="max-w-3xl m-auto">
                         <div className="pt-6 text-black">
-                            <Image src={data?.thumbnail ?? ""} width={1000} height={1000} className="max-w-full lg:max-w-3xl rounded-xl mb-6 mx-auto" style={{ objectFit: "cover"}}/>
+                            <Image alt={data.alt} src={data?.thumbnail ?? ""} width={1000} height={1000} className="max-w-full lg:max-w-3xl rounded-xl mb-6 mx-auto" style={{ objectFit: "cover"}}/>
                             <h2 className="text-3xl font-bold mb-10"> {data.topic} </h2>
                             <PortableText value={data.content} components={components}/>
                             

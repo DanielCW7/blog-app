@@ -13,21 +13,21 @@ const Contact = () => {
                 {/* icons with links */}
                 <Link href="https://github.com/DanielCW7" target="_blank">
                     <div className="flex flex-row justify-center gap-2 border-2 rounded px-5 py-2 w-64 mx-auto md:mx-0 md:my-auto">
-                        <Image src={github.src} width={30} height={30} className="" />
+                        <Image src={github.src} width={30} height={30} alt="github icon" />
                         <p className="my-auto"> Github </p>
                     </div>                
                 </Link>
 
                 <Link href="https://www.linkedin.com/in/daniel-connor-wilson-a67706177/" target="_blank">
                     <div className="flex flex-row justify-center gap-2 border-2 rounded px-5 py-2 w-64 mx-auto md:mx-0 md:my-auto">
-                        <Image src={linkedIn.src} width={30} height={30} className="" />
+                        <Image src={linkedIn.src} width={30} height={30} alt="linkedin icon" />
                         <p className="my-auto"> LinkedIn </p>
                     </div>
                 </Link>
 
                 <Link href="https://danielwilson.io" target="_blank">
                     <div className="flex flex-row justify-center gap-2 border-2 rounded px-5 py-2 w-64 mx-auto md:mx-0 md:my-auto">
-                        <Image src={react.src} width={30} height={30} className="" />
+                        <Image src={react.src} width={30} height={30} alt="react icon" />
                         <p className="my-auto"> Portfolio site </p>
                     </div>
                 </Link>
