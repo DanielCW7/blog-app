@@ -19,7 +19,7 @@ const Posts = () => {
 
         try {
             const items = await getPosts();
-            const list = items.map(post => <Post data={post} />)
+            const list = items.map(post => <Post data={post} key={post.slug} />)
             setposts(list)
         } catch (err) {
             console.error(err)
