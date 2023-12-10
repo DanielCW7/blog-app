@@ -1,6 +1,6 @@
 import github from "../images/icons/githubIcon.svg";
-import linkedIn from "../images/icons/linkedInIcon.svg";
-import react from "../images/icons/ReactIcon.svg";
+import linkedIn from "../images/icons/linkedinIcon.svg";
+import react from "../images/icons/reactIcon.svg";
 import Image from "next/image"
 import Link from "next/link"
 
