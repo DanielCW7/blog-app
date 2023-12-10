@@ -11,7 +11,7 @@ export async function getPosts() {
 
     //  GROQ comes from sanity
     return client.fetch(
-        groq`*[_type == "blog"]{
+        groq`*[_type == "blog"] | order(date desc){
             _id,
             _createdAt,
             topic,
